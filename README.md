@@ -1,5 +1,5 @@
 ![node](https://img.shields.io/node/v/webpack?style=flat-square)
-![](https://img.shields.io/badge/beta-development-green?style=flat-square)
+![beta development](https://img.shields.io/badge/beta-development-green?style=flat-square)
 
 # Dulce Calc (BETA)
 
