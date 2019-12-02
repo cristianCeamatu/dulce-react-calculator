@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![node](https://img.shields.io/node/v/webpack?style=flat-square)
+![beta development](https://img.shields.io/badge/beta-development-green?style=flat-square)
+
+# Dulce Calc (BETA)
+
+Calculator web app built with React. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Requirements
+
+- Latest version of **[NodeJS](https://nodejs.org/en/)** _-- (npm included)_
+
+## Preview
+
+There are two options to load this App.
+
+- Click [here](#) for the live version. //to be updated!
+- Download the repo, checkout to **development** branch and load the `./dist/index.html` in your browser.
 
 ## Available Scripts
 
@@ -41,28 +57,20 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Development and contributions
 
-### Code Splitting
+- Fork and/or download the repo.
+- Run `npm install` _(This command should install the **[Webpack 4 Tools](https://webpack.js.org/guides/getting-started/)**)_
+- Improve the code stored in `./src/`
+- Run `npm run watch` to compile the assets.
+- Send a Pull Request.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Developer
 
-### Analyzing the Bundle Size
+- [Elizabeth Villalejos](https://dev.to/misselliev)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Also, you can browse through more projects in my portfolio [here](https://misselliev-portfolio.herokuapp.com/)
 
-### Making a Progressive Web App
+“What simple action could you take today to produce a new momentum toward success in your life?” Tony Robbins
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
