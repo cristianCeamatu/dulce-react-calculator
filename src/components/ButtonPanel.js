@@ -22,7 +22,7 @@ export default class ButtonPanel extends React.Component {
           <Button name="6" />
           <Button name="-" />
         </div>
-        <div>
+        <div class="group">
           <Button name="1" />
           <Button name="2" />
           <Button name="3" />
