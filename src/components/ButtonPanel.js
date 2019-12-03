@@ -4,19 +4,19 @@ export default class ButtonPanel extends React.Component {
   render() {
     return (
       <div id="panel">
-        <div>
+        <div class="group">
           <Button name="AC" />
           <Button name="+/-" />
           <Button name="%" />
           <Button name="/" />
         </div>
-        <div>
+        <div class="group">
           <Button name="7" />
           <Button name="8" />
           <Button name="9" />
           <Button name="X" />
         </div>
-        <div>
+        <div class="group">
           <Button name="4" />
           <Button name="5" />
           <Button name="6" />
@@ -28,7 +28,7 @@ export default class ButtonPanel extends React.Component {
           <Button name="3" />
           <Button name="+" />
         </div>
-        <div>
+        <div class="group">
           <Button name="0" />
           <Button name="." />
           <Button name="=" />

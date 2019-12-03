@@ -30,3 +30,7 @@ code {
   text-align: right;
   font-size: 2.5em;
 }
+
+.group {
+  height: 100px;
+}
