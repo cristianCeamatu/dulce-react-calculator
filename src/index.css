@@ -22,13 +22,14 @@ code {
 }
 
 #display {
+  box-sizing: border-box;
   height: 100px;
-  background-color: lightslategray;
+  background-color: #b8bfc2;
   font-weight: bold;
   color: white;
   padding: 15px;
   text-align: right;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 .group {
