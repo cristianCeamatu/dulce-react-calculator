@@ -1,5 +1,5 @@
 // Calculator object contains total, next and operation
-
+import operate from "./operate";
 export default function calculate({ total, next, operation }, buttonName) {
   switch (buttonName) {
     case "AC":
@@ -8,14 +8,17 @@ export default function calculate({ total, next, operation }, buttonName) {
       operation = "";
       break;
     case "+/-":
-      total = total * -1;
+      total = operation ? operate(total, next, operation) : next;
       next = total;
-      operation = "";
+      operation = buttonName;
       break;
     case "%":
-      operation = "";
+      total = operation ? operate(total, next, operation) : next;
+      operation = buttonName;
       break;
     case "=":
+      total = operation ? operate(total, next, operation) : next;
+      next = total;
       operation = "";
       break;
 
