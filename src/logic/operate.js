@@ -32,9 +32,13 @@ function substract(num1, num2) {
 }
 
 function divide(num1, num2) {
-  return Big(num1)
-    .div(num2)
-    .toString();
+  if (num2 === 0) {
+    return "Error";
+  } else {
+    return Big(num1)
+      .div(num2)
+      .toString();
+  }
 }
 
 function multiply(num1, num2) {
