@@ -8,7 +8,7 @@ export default function Button({ name, color, wide, clickHandler }) {
     fontSize: "2.5em"
   };
   return (
-    <button onClick={() => clickHandler({ name })} style={styles}>
+    <button style={styles} onClick={() => clickHandler(name)}>
       {name}
     </button>
   );
@@ -16,7 +16,7 @@ export default function Button({ name, color, wide, clickHandler }) {
 Button.defaultProps = { color: "#ffa420", wide: false };
 
 Button.propTypes = {
-  result: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string,
   wide: PropTypes.bool
 };
