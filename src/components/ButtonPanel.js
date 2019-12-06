@@ -4,7 +4,7 @@ export default function ButtonPanel(props) {
   const light = "#b8bfc2";
   return (
     <div id="panel">
-      <div class="group">
+      <div className="group">
         <Button
           name="AC"
           clickHandler={buttonName => props.clickHandler(buttonName)}
@@ -22,7 +22,7 @@ export default function ButtonPanel(props) {
           clickHandler={buttonName => props.clickHandler(buttonName)}
         />
       </div>
-      <div class="group">
+      <div className="group">
         <Button
           name="7"
           color={light}
@@ -43,7 +43,7 @@ export default function ButtonPanel(props) {
           clickHandler={buttonName => props.clickHandler(buttonName)}
         />
       </div>
-      <div class="group">
+      <div className="group">
         <Button
           name="4"
           color={light}
@@ -64,7 +64,7 @@ export default function ButtonPanel(props) {
           clickHandler={buttonName => props.clickHandler(buttonName)}
         />
       </div>
-      <div class="group">
+      <div className="group">
         <Button
           name="1"
           color={light}
@@ -85,10 +85,10 @@ export default function ButtonPanel(props) {
           clickHandler={buttonName => props.clickHandler(buttonName)}
         />
       </div>
-      <div class="group">
+      <div className="group">
         <Button
           name="0"
-          wide="true"
+          wide={true}
           color={light}
           clickHandler={buttonName => props.clickHandler(buttonName)}
         />

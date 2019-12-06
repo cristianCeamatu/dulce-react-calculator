@@ -5,7 +5,8 @@ export default function Button({ name, color, wide, clickHandler }) {
     backgroundColor: color,
     width: wide ? "50%" : "25%",
     height: 100,
-    fontSize: "2.5em"
+    fontSize: "2.5em",
+    border: "1px solid white"
   };
   return (
     <button style={styles} onClick={() => clickHandler(name)}>

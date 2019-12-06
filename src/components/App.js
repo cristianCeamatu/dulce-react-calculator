@@ -4,10 +4,7 @@ import ButtonPannel from "./ButtonPanel";
 import calculate from "../logic/calculate";
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { total: null, next: null, operation: null };
-  }
+  state = { total: "0", next: "0", operation: "", displayed: false };
 
   handleClick(buttonName) {
     this.setState(calculate(this.state, buttonName));
@@ -15,7 +12,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div id="main">
-        <Display result={this.state.total} />
+        <Display result={this.state.next} />
         <ButtonPannel
           clickHandler={buttonName => this.handleClick(buttonName)}
         />

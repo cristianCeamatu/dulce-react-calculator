@@ -1,6 +1,8 @@
 import Big from "big-js";
 
 export default function operate(num1, num2, operation) {
+  console.log(num1);
+  console.log(num2);
   switch (operation) {
     case "+":
       return add(num1, num2);
