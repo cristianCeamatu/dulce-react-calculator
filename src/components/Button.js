@@ -14,7 +14,7 @@ export default function Button({ name, color, wide, clickHandler }) {
     </button>
   );
 }
-Button.defaultProps = { color: "#ffa420", wide: false };
+Button.defaultProps = { color: "rgb(255, 196, 32)", wide: false };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,

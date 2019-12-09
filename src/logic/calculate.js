@@ -1,35 +1,40 @@
-// Calculator object contains total, next and operation
 import operate from "./operate";
-export default function calculate(
-  { total, next, operation, displayed },
-  buttonName
-) {
+
+function calculate({ total, next, operation, displayed }, buttonName) {
   switch (buttonName) {
     case "AC":
-      displayed = false;
       total = "0";
       next = "0";
       operation = "";
-      break;
-    case "+/-":
-      displayed = true;
-      total = operation ? operate(total, next, operation) : next;
-      next = total;
-      operation = buttonName;
-      break;
-    case "%":
-      displayed = true;
-      total = operation ? operate(total, next, operation) : next;
-      operation = buttonName;
+      displayed = false;
       break;
     case "=":
       displayed = true;
       total = operation ? operate(total, next, operation) : next;
-      console.log(operate(total, next, operation));
+      next = total;
+      operation = "";
+      if (total === "Error") total = "0";
+      break;
+    case "+/-":
+      displayed = true;
+      total = reverse(total);
       next = total;
       operation = "";
       break;
-
+    case "/":
+    case "x":
+    case "-":
+    case "+":
+    case "%":
+      displayed = true;
+      total = operation ? operate(total, next, operation) : next;
+      next = total;
+      operation = buttonName;
+      if (total === "Error") {
+        total = "0";
+        operation = "";
+      }
+      break;
     default:
       next = displayed ? buttonName : numberString(next, buttonName);
       displayed = false;
@@ -48,3 +53,15 @@ function numberString(first, added) {
   }
   return numbers.join("");
 }
+
+function reverse(number) {
+  const numbers = number.split("");
+  if (numbers[0] === "-") {
+    numbers.shift();
+  } else {
+    numbers.unshift("-");
+  }
+  return numbers.join("");
+}
+
+export default calculate;
