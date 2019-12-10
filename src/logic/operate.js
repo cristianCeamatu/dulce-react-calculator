@@ -1,15 +1,16 @@
-import Big from "big-js";
+import Big from "big.js";
 
-export default function operate(num1, num2, operation) {
+function operate(num1, num2, operation) {
   switch (operation) {
     case "+":
       return add(num1, num2);
     case "-":
       return substract(num1, num2);
+    case "/":
+      if (num2 === "0") return "ERR";
+      return divide(num1, num2);
     case "x":
       return multiply(num1, num2);
-    case "/":
-      return divide(num1, num2);
     case "%":
       return percent(num1, num2);
     case "+/-":
@@ -18,7 +19,6 @@ export default function operate(num1, num2, operation) {
       break;
   }
 }
-
 function add(num1, num2) {
   return Big(num1)
     .plus(num2)
@@ -59,3 +59,4 @@ function reverse(num1) {
     .times(-1)
     .toString();
 }
+export default operate;

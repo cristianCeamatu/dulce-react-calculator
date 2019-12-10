@@ -15,7 +15,7 @@ code {
 }
 
 #display, #main, #panel {
-  /* align-items: center; */
+  margin-top: 1em;
   display: flex;
   width: 700px;
   flex-direction: column;
@@ -24,7 +24,7 @@ code {
 #display {
   box-sizing: border-box;
   height: 100px;
-  background-color: #b8bfc2;
+  background-color: #cdcdcd;
   font-weight: bold;
   color: white;
   padding: 15px;
