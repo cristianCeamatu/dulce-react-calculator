@@ -13,7 +13,7 @@ Calculator web app built with React. This project was bootstrapped with [Create 
 
 There are two options to load this App.
 
-- Click [here](#) for the live version. //to be updated!
+- Click [here](https://dulce-react-calculator.herokuapp.com/) for the live version. 
 - Download the repo, checkout to **development** branch and run `npm start` in your terminal.
 
 ## Available Scripts
